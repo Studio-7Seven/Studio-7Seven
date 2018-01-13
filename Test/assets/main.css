@@ -1,0 +1,238 @@
+body
+{
+    /*font-family: "Roboto";*/
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Fira Sans', sans-serif;
+    background-color: #f6f6f6;
+}
+
+h2
+{
+    font-weight: 100;
+}
+
+
+/*******************MAIN MENU**********************/
+.navbar
+{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.navbar-nav
+{
+    padding: 15px 0;
+    float: right;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #252625;
+}
+
+.navbar-inverse
+{
+    background-color: #FFF;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar
+{
+    background-color: #252625;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #252625;
+    transition: 0.2s;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+}
+
+
+.element_main_menu_actif, .element_main_menu:hover
+{
+    color: #2ed1e6!important;
+}
+
+.main_logo_left
+{
+    float: left;
+}
+
+.main_logo_left .title
+{
+    font-weight: 100;
+    display: inline-block;
+}
+
+
+.main_logo_left img
+{
+    max-height: 80px;
+    padding: 20px;
+    display: inline-block;
+    float: left;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.svg_main_menu
+{
+    margin-top: -3px;
+    max-height: 16px;
+}
+
+/*****************BACKGROUND************************/
+
+
+.video_presentation_full_back > .video_full_back {
+	background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.video_presentation_full_back >.video_full_back > video, .video_presentation_full_back >.video_full_back > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Play with opacity to dark the video */
+}
+
+/* Filter on the background video : change with the svg and the size */
+.video_presentation_full_back > .video_full_back::after 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCA0IDQiPjxnPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PC9nPjwvc3ZnPg==);
+    background-size: 4px 4px;
+    opacity: 0.25;
+    backface-visibility: hidden;
+}
+
+
+/*******************BOX CENTER**********************/
+
+
+.float_box_center
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.float_box_center > .float_box_center_full_page
+{
+    display: table-row;
+    height: 100%;
+}
+
+.float_box_center > .float_box_center_full_page > .float_box_center_box 
+{
+    display: table-cell;
+    padding: 15px 50px;
+    vertical-align: middle;
+}
+
+.float_box_center > .float_box_center_full_page > .float_box_center_box > .float_box_center_content
+{
+    position: relative;
+    margin: 0 auto;
+    padding: 45px;
+    max-width: 600px;
+    /*background: #FFF;*/
+    color: #FFF;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.44);
+}
+
+.float_box_center > .float_box_center_full_page > .float_box_center_box > .float_box_center_content_img
+{
+    position: relative;
+    margin: 0 auto;
+    padding: 45px;
+    max-width: 545px;
+}
+
+.float_box_center > .float_box_center_full_page > .float_box_center_box > .float_box_center_content_img img
+{
+    height: 100%;
+    width: 100%;
+}
+/*******************CAROUSEL HOME**********************/
+.bootstrap_carousel_home
+{
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.carousel-control
+{
+    max-height: 700px;
+}
+
+/*******************HOME**********************/
+
+.img_home
+{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.img_home > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.home_title
+{
+    text-align: center;
+    color: red;
+}
+
+
+/*******************FORMATEUR**********************/
+
+.main_content
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.formateur_list_element
+{
+    background-color: #FFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.img_circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
