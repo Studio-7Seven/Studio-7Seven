@@ -1,0 +1,9 @@
+# Hidden Files #
+#########################
+.idea/
+.htaccess
+.DS_Store
+
+# Cockpit Folder #
+cockpit/storage
+Test/
