@@ -14,15 +14,15 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 	<!-- ZOOMBOX -->
-	<link rel="stylesheet" href="/assets/zoombox/zoombox.css">
-	<script type="text/javascript" src="/assets/zoombox/zoombox.js"></script> 	
+	<link rel="stylesheet" href="assets/zoombox/zoombox.css">
+	<script type="text/javascript" src="assets/zoombox/zoombox.js"></script> 	
 	<!-- GOOGLE FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<!-- CSS -->
-	<link rel="stylesheet" href="/assets/main.css">
+	<link rel="stylesheet" href="assets/main.css">
 	<!-- ICON -->
-	<link rel="shortcut icon" type="image/x-icon" href="/assets/icons/mainlogo__temp.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/icons/mainlogo__temp.ico" />
 </head>
 
 <body>
@@ -62,13 +62,13 @@
 
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							<li><a href="/" class="element_main_menu <?php if ($get_1==null) echo 'element_main_menu_actif'; ?>">Home</a></li>
-							<li><a href="/studio" class="element_main_menu <?php if ($get_1 == "studio") echo 'element_main_menu_actif'; ?>">Studio</a></li>
-							<li><a href="/jeux" class="element_main_menu <?php if ($get_1 == "jeux") echo 'element_main_menu_actif'; ?>">Jeux</a></li>
-							<li><a href="/web" class="element_main_menu <?php if ($get_1 == "web") echo 'element_main_menu_actif'; ?>">Web</a></li>
-							<li><a href="/softwares" class="element_main_menu <?php if ($get_1 == "softwares") echo 'element_main_menu_actif'; ?>">Softwares</a></li>
-							<li><a href="/contact" class="element_main_menu <?php if ($get_1 == "contact") echo 'element_main_menu_actif'; ?>">Contact</a></li>
-							<li><a href=""><img src="/assets/icons/iconmonstr-favorite-7-red.svg" class="svg_main_menu"></a></li>
+							<li><a href="home" class="element_main_menu <?php if ($get_1=="home") echo 'element_main_menu_actif'; ?>">Home</a></li>
+							<li><a href="studio" class="element_main_menu <?php if ($get_1 == "studio") echo 'element_main_menu_actif'; ?>">Studio</a></li>
+							<li><a href="jeux" class="element_main_menu <?php if ($get_1 == "jeux") echo 'element_main_menu_actif'; ?>">Jeux</a></li>
+							<li><a href="web" class="element_main_menu <?php if ($get_1 == "web") echo 'element_main_menu_actif'; ?>">Web</a></li>
+							<li><a href="softwares" class="element_main_menu <?php if ($get_1 == "softwares") echo 'element_main_menu_actif'; ?>">Softwares</a></li>
+							<li><a href="contact" class="element_main_menu <?php if ($get_1 == "contact") echo 'element_main_menu_actif'; ?>">Contact</a></li>
+							<li><a href=""><img src="assets/icons/iconmonstr-favorite-7-red.svg" class="svg_main_menu"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -77,7 +77,7 @@
 
 		<section class="particles_canva" style="height: <?php echo $height; ?>">
 			<canvas class="particles_canva_background"></canvas>
-			<script src="/assets/particles.js-master/dist/particles.min.js"></script>
+			<script src="assets/particles.js-master/dist/particles.min.js"></script>
 			<script type="text/javascript">
 			window.onload = function() {
 			  Particles.init({
